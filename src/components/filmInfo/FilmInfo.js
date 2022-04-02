@@ -31,14 +31,14 @@ function FilmInfo(props) {
           {film.poster_path ? <img src={`https://image.tmdb.org/t/p/w500${film.poster_path}`} alt={film.title} className="cover"/> : ""}
           <div className="info ms-5">
             <h1>{film.title}</h1>
-            {film.genres ? <p>Genre: {film.genres[0].name}</p> : ""}
-            <p>Relase Date: {film.release_date}</p>
-            <p>Runtime: {film.runtime} min</p>
-            <p>Vote Avarage: {film.vote_average}/10</p>
+            <p>Genre: {film.genres ? film.genres[0].name : "-"}</p>
+            <p>Relase Date: {film.release_date ? film.release_date.substring(0, 4) : '-'}</p>
+            <p>Runtime: {film.runtime ? film.runtime : "-"} min</p>
+            <p>Vote Avarage: {film.vote_average ? film.vote_average : '-'}/10</p>
           </div>
         </div>
         <p className="des mt-5"><span style={{fontWeight: "bold"}}>Overview:</span><br/>
-          {film.overview}
+          {film.overview ? film.overview : ""}
         </p>
       </div>
     </div>
