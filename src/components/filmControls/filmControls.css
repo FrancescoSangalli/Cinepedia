@@ -1,0 +1,8 @@
+.icon-container {
+  bottom: 5px;
+  opacity: 0;
+  transition: .3s;
+}
+
+.icon-container:hover { opacity: 1; }
+.icon-container .btn { padding: 0rem .4rem !important; }

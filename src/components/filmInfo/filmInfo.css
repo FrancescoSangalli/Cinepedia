@@ -1,0 +1,82 @@
+.film-info {
+  margin: 0;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.paper {
+  width: 70%;
+  padding: 8rem;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.paper div {
+  justify-content: center;
+}
+
+.cover {
+  width: 200px;
+  height: 333px;
+}
+
+.intro {
+  font-size: 4.4rem;
+  color: #dc3545;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+}
+
+@media (max-width: 650px) {
+  .cover {
+    width: 150px;
+    height: 250px;
+  }
+
+  .intro { font-size: 3.6rem; }
+  .info h1 { font-size: 1.8rem; }
+  .info p, .des {  font-size: 1.4rem; }
+}
+
+@media (max-width: 570px) {
+
+  .paper { padding: 6rem; }
+
+  .cover {
+    width: 100px;
+    height: 167px;
+  }
+
+  .intro { font-size: 2.8rem; }
+  .info h1 {  font-size: 1.4rem; }
+  .info p, .des {  font-size: 1.2rem; }
+}
+
+@media (max-width:470px) {
+  .book { min-height: 90vh; }
+
+  .paper { padding: 1rem; }
+
+  .paper div {
+    display: grid !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro { font-size: 2.2rem; }
+  .info { margin-left: 0 !important; }
+  .info h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .info p, .des {  font-size: 1.1rem; }
+}
+
+@media (max-width:370px) {
+  .intro { font-size: 1.8rem; }
+  .info h1 {  font-size: 1.2rem; }
+  .info p, .des {  font-size: 1rem; }
+}

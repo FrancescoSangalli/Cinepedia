@@ -1,0 +1,4 @@
+.card { background-color: #141414 !important; }
+.card-title { color: #dc3545 !important}
+.card-title:hover { color: #ce1a2c !important}
+.card-text { margin-bottom: 0 !important; }

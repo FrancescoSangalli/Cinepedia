@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1E2123;
+  color: #fff;
+  font-family: 'Kanit', sans-serif;
+}
+
+a { text-decoration: none; }
+
+.add, .watchlist, .watched {
+  padding: 50px;
+  min-height: 100vh;
+}
+
+.result-card-img, .film-card-img { height: 200px; }
+
+@media (max-width: 525px) {
+  .result-card-img, .film-card-img { height: 160px; }
+  .card-title { font-size: 1.2rem; }
+  .card-text { font-size: .8rem; }
+}
+
+@media (max-width: 410px) {
+  .add, .watchlist, .watched { padding: 25px; }
+  .result-card-img { height: 120px; }
+  .card-title { font-size: 1rem; }
+  .card-text { font-size: .7rem; }
+  .nav-logo { height: 40px; }
+}
+
+.film-card-container {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-control {
+  border: 1px solid rgba(0, 0, 0, 0.75);
+}

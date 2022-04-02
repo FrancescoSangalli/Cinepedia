@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  background-color: #dc3545;
+}
+
+.footer h1 { font-size: 1.8rem; }
+.footer h3 { font-size: 1.2rem; }
+
+.fab {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.fab:hover {
+  color: gray;
+}
